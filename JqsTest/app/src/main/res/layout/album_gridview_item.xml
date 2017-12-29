@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/Album_GridView_Item_Img"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:background="@color/TextHintBlack"
+        />
+    <CheckBox
+        android:id="@+id/Album_GridView_Item_ImgBtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:button="@drawable/album_checked_style"/>
+    <ImageView
+       android:id="@+id/Album_GridView_Item_GifFlag"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="6dp"
+
+        android:src="@drawable/gif_flag"
+        />
+</RelativeLayout>

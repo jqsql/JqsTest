@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_Grey">
+
+    <RelativeLayout
+        android:id="@+id/Album_ForAll_TopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/APP_COLOR"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/Album_ForAll_Return"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/reback"/>
+        <Button
+            android:id="@+id/Album_ForAll_Ok"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/Green"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/White"
+            android:textSize="11sp"
+            android:text="完成"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Album_ForAll_BottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/APP_COLOR"
+        android:clipChildren="true">
+
+        <TextView
+            android:id="@+id/Album_ForAll_DirName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:text="所有图片"
+            android:textColor="@color/White"/>
+
+        <TextView
+            android:id="@+id/Album_ForAll_DirCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="0张"
+            android:textColor="@color/White"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/Album_ForAll_GridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Album_ForAll_BottomLayout"
+        android:layout_below="@id/Album_ForAll_TopLayout"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="3dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp"/>
+</RelativeLayout>

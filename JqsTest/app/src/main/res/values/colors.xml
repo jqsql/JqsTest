@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <!--APP状态栏颜色-->
+    <color name="colorPrimaryDark">#c67e7e</color>
     <color name="colorAccent">#FF4081</color>
+    <!--APP状态栏颜色-->
+    <color name="APP_COLOR">#c67e7e</color>
+
+    <color name="Black">#000000</color>
+    <color name="Red">#fd0303</color>
+    <color name="White">#ffffff</color>
+    <color name="Pink">#f7b2f0</color>
+    <color name="White_Pink">#d7bdbd</color>
+    <color name="BorderGrey">#F5F5F6</color>
+    <color name="TextHintBlack">#3f3f43</color>
+    <color name="Black_Grey">#252424</color>
+    <color name="Black_Comment">#353232</color>
+    <color name="Green">#0e932e</color>
+    <!--背景灰-->
+    <color name="Background_Grey">#F1F2F6</color>
+    <!--透明-->
+    <color name="transparent">#00ffffff</color>
 </resources>
